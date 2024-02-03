@@ -1,6 +1,8 @@
 - 👋 Hi, I’m @Techyshubhs
 - 👀 I’m interested in competative coding
 - 🌱 I’m currently learning python
+- 💫I have finished the main concepts of python.
+- Now I am learning C++,HTML etc.
 
 
 <!---
