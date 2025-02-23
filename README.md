@@ -60,10 +60,11 @@
 
 ## 🐍 GitHub Contribution 
 
-<p align="center">
-<!--   <img src="https://github.com/Techyshubhs/Techyshubhs/blob/output/github-snake.svg#gh-light-mode-only" alt="Snake Animation Light Mode" /> -->
-  <img src="https://raw.githubusercontent.com/Techyshubhs/Techyshubhs/output/snake-dark.svg" alt="Snake Animation Dark Mode" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Techyshubhs/Techyshubhs/output/github-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/Techyshubhs/Techyshubhs/output/github-snake.svg" alt="Snake Animation" />
+</picture>
+
 
 
 
