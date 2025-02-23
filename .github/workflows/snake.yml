@@ -1,33 +1,29 @@
-name: 🐍 Generate Dark Mode Snake Animation
+name: Generate Snake
 
 on:
-  schedule:
-    - cron: "0 */12 * * *"  # Runs every 12 hours
+  schedule: # Runs every week
+    - cron: "0 0 * * 0"
   workflow_dispatch:
 
 jobs:
-  generate:
+  build:
+    name: Generate Snake Animation
     runs-on: ubuntu-latest
     steps:
+      # Checkout Repository
       - name: Checkout Repository
-        uses: actions/checkout@v4  # Updated to latest version
+        uses: actions/checkout@v4
 
-      - name: Generate Dark Mode Snake Animation
+      # Generate Snake Animation (Light & Dark Mode)
+      - name: Generate Snake Animations
         uses: Platane/snk@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: dist/snake-dark.svg
-          color_snake: "#00FF00"   # Neon Green Snake
-          color_dots: "#FFFFFF"    # White Dots
-          color_empty: "#222222"   # Dark Background
+          github_user_name: Techyshubhs
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4  # Updated to latest version
-        with:
-          name: snake-animation-dark
-          path: dist/snake-dark.svg
-          retention-days: 7  # Keeps artifacts for 7 days
-
+      # Upload to GitHub Pages
       - name: Push to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
