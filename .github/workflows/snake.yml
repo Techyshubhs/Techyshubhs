@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Updated to latest version
 
       - name: Generate Dark Mode Snake Animation
         uses: Platane/snk@v3
@@ -22,10 +22,11 @@ jobs:
           color_empty: "#222222"   # Dark Background
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Updated to latest version
         with:
           name: snake-animation-dark
           path: dist/snake-dark.svg
+          retention-days: 7  # Keeps artifacts for 7 days
 
       - name: Push to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
