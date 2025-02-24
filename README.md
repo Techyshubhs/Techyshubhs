@@ -1,7 +1,6 @@
 
 <h1 align="center">👋 Hi, I'm Shubham Namdev Shinde</h1>
 <h3 align="center">🚀 Full Stack MERN Developer | Competitive Programmer</h3>
-
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Techyshubhs&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
   <a href="https://www.linkedin.com/in/shubham-shinde-3a36b528a/">
